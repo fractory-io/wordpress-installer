@@ -15,7 +15,7 @@ password="****"
 email="admin@example.dev"
 
 # Theme name
-theme="mytheme@"
+theme="mytheme"
 
 read -d '' sql << EOF
     CREATE DATABASE IF NOT EXISTS $db;
