@@ -1,0 +1,4 @@
+cache
+db/dumps/*.sql
+db/dumps/*.zip
+db/dumps/*.gz

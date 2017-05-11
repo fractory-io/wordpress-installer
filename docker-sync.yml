@@ -1,0 +1,16 @@
+version: "2"
+
+options:
+  verbose: true
+
+syncs:
+  passager-23-sync:
+    src: './'
+    sync_userid: 33
+    sync_strategy: 'unison'
+    sync_excludes:
+      - .docker
+      - .git
+    watch_excludes:
+      - .*/.git
+      - .docker

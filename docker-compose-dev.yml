@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  php:
+    volumes:
+      - .docker/cache/composer:/var/www/.composer/cache
+      - passager-23-sync:/var/www/html:nocopy
+
+volumes:
+  passager-23-sync:
+    external: true
