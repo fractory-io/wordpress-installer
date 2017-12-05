@@ -4,13 +4,23 @@ options:
   verbose: true
 
 syncs:
-  passager-23-sync:
+  wordpress-sync:
+    sync_args: [ '-terse' ]
+    notify_terminal: false
     src: './'
     sync_userid: 33
     sync_strategy: 'unison'
     sync_excludes:
       - .docker
       - .git
+      - .gitignore
+      - .scss-lint
+      - docker-compose-run-script.sh
+      - docker-compose.yml
+      - docker-sync.yml
     watch_excludes:
-      - .*/.git
-      - .docker
+      - '.*/.git'
+      - '.*/node_modules'
+      - '.*/bower_components'
+      - '.*/sass-cache'
+      - '.*/.sass-cache'
